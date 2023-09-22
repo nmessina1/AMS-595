@@ -1,0 +1,23 @@
+Documentation HW #1
+
+
+1. 
+BaseConverter will take 3 inputs: digits, n, and m.
+It will take your integer in base n, and return your integer in base m.
+This works by converting the integer to base 10 first, and then converting to base m.
+
+Exceptions: n and m must be between 1 and 10, and the integer you input must be valid in base n.
+
+2. 
+Gaussian Elimination
+This will require an nxn matrix, A, and a nx1 vector b (called c in the code), and it will return a vector x, such that Ax=b. To solve for x it will 
+use Gaussian Elimination to get the matrix into row-echelon form, and then back substitute to solve for each variable.
+
+3. 
+MontePi
+This will use randomly generated points between 0 and 1 to approximate Pi. It will do this by taking the ratio of points inside and outside of 
+the Unit Circle, and multiplying that ratio by 4. We will also get the relative and absolute errors here.
+Then it will Plot 3 things:
+the time it took to execute for many values of n(number of points)
+Approximations of Pi against various values of n
+Points inside and outside the circle in different colors
