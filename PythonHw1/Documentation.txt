@@ -1,0 +1,28 @@
+Documentation for Python HW #1
+
+1. This transforms the matlab switch statement to a Python if-elif-else statement.
+Using an input, the code will tell you if this input is negative one, zero, positive one, 
+or some other integer.
+
+2. This code uses a while loop to give you the factorial of a positive integer.
+While n-1 is greater than 0, we will continuously multiply the input n by n-1.
+
+3. A function to determine if a number is prime. We know a number is prime if it is divisible
+by a number other than itself and 1. So we use a for loop in our function to go through all
+numbers smaller than n, and check if n is divisible by it. If so, we return false. If n is 
+not divisible by any number > 1, and exlcuding itself, then it is prime.
+
+4. This code uses list comprehension to return prime factors of a number. Using the is_prime funciton
+from the previous question, we check every factor of n. If is_prime returns true, and the
+number is divisible by n, then we add it to our list output.
+
+5. Here we write a function to get the nth row of Pascal's triangle, both through recursion
+and through loops.
+In the recursion we reference the function itelf in order to get our previous row. Then we 
+iterate through the previous row, adding the elements to the numbers for the next row. 
+We always append a 1 at the end of each row.
+
+For the while/for loop not using recursion, we iterate while our counter variable is less than 
+n. We use similar logic from the recursion in order get the elements for the current row.
+Then we set our previous row to equal our current row at the end of each loop. This replaces
+our recursion from the first part of the question.
