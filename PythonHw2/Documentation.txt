@@ -1,0 +1,39 @@
+Python Project #2 Documentation
+
+2. Implementing Gradient Descent Algorithm
+This problem finds the gradient descent of the function f(x) = sqrt(x**2 +5) and plots it over the 
+interval [-5,5]. This is first plotted witout the minumum, and then once more with the minimum
+once we find the gradient
+X_T = 1.1159022395930293e-12
+
+We also plot the values of f(xk) against the iteration number k
+
+Finally, we plot the values f(x_k-1)-f(k) for each step size: 5,3,1, and 0.5 against iteration number k.
+
+3. Linear Regression with Numpy and Graphing with Matplotlib
+Here we use randomly generated data to perform a 2D linear regression, and plot the results
+along with the regression plane in 3D. The random seed is set to 38 to represent the last
+2 digits of my SBU ID
+
+Intercept and Coefficients are reported:
+Intercept: 3.7066788
+Coefficients: [0.66633, 4.23992]
+
+4. Logistic Regression with Numpy and Gaphing with Matplotlib
+Here the learning rate and number of epochs are tuned to the following:
+learning_rate = 1
+num_epochs = 300
+Comments are added for explanation and readability
+
+5. Image Binary Classification
+5a. code covered in class is re-implemented 
+5b. Incorrect Predictions are reported.
+The indices of the incorrect predictions are: [6, 10, 11, 13, 18, 19, 24, 28, 29, 30, 34, 41, 44, 45, 46]
+4 of these are reported with images and predicted values
+5c. Training data is set to first 168 images of training data set, the remaining 40 images
+in this training set are used as the test data
+Incorrect Predictions are recorded
+The indices of the incorrect predictions are: [0, 1, 2, 3, 6, 8, 10, 14, 16, 19, 23, 26, 27, 28, 29, 31, 35, 36, 38]
+4 of these are reported with images and predicted values
+
+
