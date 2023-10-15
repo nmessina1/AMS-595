@@ -30,10 +30,14 @@ Comments are added for explanation and readability
 5b. Incorrect Predictions are reported.
 The indices of the incorrect predictions are: [6, 10, 11, 13, 18, 19, 24, 28, 29, 30, 34, 41, 44, 45, 46]
 4 of these are reported with images and predicted values
+Train Accuracy: 97.404
+Test Accuracy: 70
 5c. Training data is set to first 168 images of training data set, the remaining 40 images
 in this training set are used as the test data
 Incorrect Predictions are recorded
 The indices of the incorrect predictions are: [0, 1, 2, 3, 6, 8, 10, 14, 16, 19, 23, 26, 27, 28, 29, 31, 35, 36, 38]
 4 of these are reported with images and predicted values
+Train Accuracy: 98.103
+Test Accuracy: 52.5
 
 
