@@ -1,0 +1,23 @@
+Python Homework #3 Documentation
+
+2a. Numerical Integration
+This problem first uses Sympy to solve a definite integral, and then uses a numpy function to approximate the function 
+using the trapezoid rule scheme over multiple values of N
+
+3. Pandas I
+This problem created a pandas dataframe, and demonstrates adding a column.
+
+4. Pandas II
+This problem uses pandas to display a dataframe from an excel file, sorts the data, and demonstrates indexing a dataframe
+
+5. LU Decomposition
+This problem uses gaussian elimination to take an input matrix A, and return 2 matrices L and U such that L*U = A
+Bonus:
+The bonus uses a pivoting function to output a pivot matrix P such that P*A = L*U
+
+6. Markov Chain
+This problem performs a Markov chain transition using a matrix P on a set of n states.
+A 5x5 matrix is set and normalized 
+The transition rule is applied 50 times and the eigenvector is computed
+the component wise difference between p50 and the stationary distribution is computed, 
+they all match within 1e-5
