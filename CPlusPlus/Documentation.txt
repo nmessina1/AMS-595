@@ -1,0 +1,98 @@
+First is the function for Question 2 - "print_vector"
+	this function iterates through all indices of a vector, and prints the integer at every
+	index, in order to print the whole vector
+
+Next is the function for 4a - "isprime"
+	this funciton inputs an integer and outputs either "true" or "false", checking whether
+	n is prime or not
+	the function always returns true when n=2, and false when n = 1
+	the function iterates through all values from i = 2 to n/2. We start at 2 because
+	we don't want to check if the number is divisible by 1
+	we iterate through all these numbers to check if n is divisible by them
+	if n is divisible by any of the numbers between 2 and n/2, it is not prime and the
+	function returns false
+	otherwise it returns true
+
+Test Cases for 4a:
+	we test our isprime() function with the values 2, 10, 17
+	the ouputs should be:
+	isprime(2) = 1
+	isprime(10) = 0
+	isprime(17) = 1
+
+Function for 4b = "factorize"
+	inputs an integer n and outputs a vector containing all factors of n
+	we do this by iterating through all numbers 1 to n, and adding that value to the
+	return vector if n is divisible by it
+
+Test Cases for 4B:
+	we test our factorize() function with the values 2, 72, 196
+	the outputs should be:
+	Your Vector is: 1 2
+	Your Vector is: 1 2 3 4 6 8 9 12 18 24 36 72
+	Your Vector is: 1 2 4 7 14 28 49 98 196
+
+Function for 4c = prime_factorization:
+	inputs an integer n and returns a vector of the prime factors
+	using the isprime() function from 4a, we check if all numbers from 1 to n are
+	factors of n, and if it is prime. If both are true we add it to the return vector
+
+Test Cases for 4c:
+	we test our prime_factorization() function with the values 2, 72, 196
+	the outputs should be:
+
+	Your Vector is: 2
+	Your Vector is: 2 3
+	Your Vector is: 2 7
+
+Function for 5 = "Pascal"
+	uses iteration to return the nth row of Pascal's triangle
+	we iterate through each row to add the values at index i and i+1 of the previous row
+	set the current row to the previous row and continue
+
+Test Cases for 5:
+	we test pascal() using the values 6, 2, 3, 4, 1
+	the outputs should be:
+	Your Vector is: 1 5 10 10 5 1
+	Your Vector is: 1 1
+	Your Vector is: 1 2 1
+	Your Vector is: 1 3 3 1 
+	Your Vector is: 1
+
+Next under main() is the code for Question 1:
+	the user enters a number we use a switch statement to see if the entered value is equal to
+	-1, 0, 1, or another value
+
+Next is my test vector for Q2 - the print_vector function
+	the test vector is {1, 2, 3, 4, 5, 6}
+
+Next is Question 3, the while loop for the fibonacci sequence:
+	we do this by initializing our first two values, 0 and 1, as well as our first output 
+	which is our first two values added together
+	we always set the num1 to the num2, and the num 2 to the output, so that we are always
+	adding the previous 2 terms
+	we do this while the output is less than 4M so that we print the values up to 4000000
+
+	the output is as below
+	1 , 2 , 3 , 5 , 8 , 13 , 21 , 34 , 55 , 89 , 144 , 233 , 377 , 610 , 987 , 
+	1597 , 2584 , 4181 , 6765 , 10946 , 17711 , 28657 , 46368 , 75025 , 121393 , 
+	196418 , 317811 , 514229 , 832040 , 1346269 , 2178309 , 3524578
+
+Next I call the functions that test:
+	4a
+	4b
+	4c
+	5
+
+The outputs will be in the following order:
+	first input the value for the switch statement in #1
+	the output for 1
+	the output for 2
+	the output for 3
+	the output for 4a, 4b, 4c
+	the output for 5
+
+
+
+
+
