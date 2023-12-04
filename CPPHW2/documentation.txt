@@ -1,0 +1,35 @@
+Q1. Approximating Pi
+
+Uses files pi_approx.cpp
+
+uses the formulas given in the question to approximate the value of Pi in a function called Pi_approx
+A struct called PiResults is used here so that we can return both the approximation and the error of Pi
+
+Q2. Dynamic Memory, Pointers, and Arrays
+
+uses files approximations.cpp 
+
+creates a function called approximations to intake a vector, and approximate Pi using each integer in the vector.
+This is stored dynamically using pointers and malloc
+
+Q3. Header Files and Makefiles
+
+uses makefile, HW2main.cpp, pi_approx.h, approximations.h
+
+In HW2main.cpp we call our PiResults struct, and the pi_approx function from Q1 to print out 
+the approximation and error for Pi when N=10000
+The output of this when the makefile is run is:
+	Using Q1, here is Pi approximation and error for N = 10000
+	Approximation: 3.14159
+	Absolute Error: 1.17598e-06
+
+Then we create a vector called powersof10 to give us an array with the elements (10^1,...,10^7).
+This array is used as the argument for the approximations function from Q2.
+The output of this when the makefile is run is:
+	3.10452
+	3.14042
+	3.14156
+	3.14159
+	3.14159
+	3.14159
+	3.14159
